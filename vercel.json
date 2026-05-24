@@ -9,8 +9,12 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
+      "src": "/(style\\.css|app\\.js)",
       "dest": "/static/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/static/assets/$1"
     },
     {
       "src": "/(.*)",
